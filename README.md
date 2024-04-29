@@ -13,7 +13,9 @@ This command line tool is designed to combine multiple JSON files containing dev
 
 ## Usage
 Running the Application
+
 To run the application, use the following command:
+
 npm start <directory-path> [output-path]
 
 <directory-path>: Mandatory. The path to the directory containing the JSON files to process.
@@ -21,9 +23,10 @@ npm start <directory-path> [output-path]
 
 Examples:
 1. Combining JSON files and printing the output to the console:
+
 npm start example-boards/case1
 
-2. Combining JSON files and writing the output to a specific file:
+3. Combining JSON files and writing the output to a specific file:
 npm start example-boards/case1 output.json
 
 ## Assumptions
@@ -86,6 +89,6 @@ b. Invalid Data:
 Test how the function behaves when given data that results in invalid JSON.
 Expectation: The function should not crash, and it should provide error message
 
-2. #### Performance Considerations: 
+2. ### Performance Considerations: 
 For directories with a large number of files or very large files, consider how performance might be impacted and if any optimizations are possible.
 
