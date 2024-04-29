@@ -4,7 +4,7 @@
 This command line tool is designed to combine multiple JSON files containing development board information into a single JSON output. It reads development board data from JSON files within a specified directory, validates data if follows a standard schema, merges the data by removing duplicates, sorts it by vendor and then by board name, and outputs the combined data either to a JSON file or to the console.
 
 ## Features
-- Read and parse each JSON file, and validate input data if follows the standard schema
+- Reads and parses each JSON file, and validate input data if follows the standard schema
 - Combines data from multiple JSON files and remove duplicates.
 - Sorts boards alphabetically by vendor, then by name.
 - Provides metadata about the number of unique vendors and total boards.
