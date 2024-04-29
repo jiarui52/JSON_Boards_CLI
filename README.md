@@ -26,10 +26,10 @@ Where:
 Examples:
 1. Combining JSON files and printing the output to the console:
 
-npm start example-boards/case1
+`npm start example-boards/case1`
 
 2. Combining JSON files and writing the output to a specific file:
-npm start example-boards/case1 output.json
+`npm start example-boards/case1 output.json`
 
 ## Assumptions
 1. It is possible that different vendors could supply the same type of development board. Uniqueness Criteria: a board is unique by a combination of 'name', 'core' and 'has_wifi'
