@@ -31,10 +31,9 @@ const readJsonFiles = async(directory: string): Promise<Board[]> => {
 	if(filteredFiles.length === 0) {
 		throw new Error(`No JSON file found in ${directory}`)
 	}
-	console.log('filteredFiles', filteredFiles)
 	
 
-	// read and parse each JSON file, and validate it
+	// read and parse each JSON file, and validate schema
 	const promises = filteredFiles.map(async (file) => {
 		const filePath = path.join(directory, file)
 		let fileData: string
@@ -55,7 +54,8 @@ const readJsonFiles = async(directory: string): Promise<Board[]> => {
 			console.error(`Error parsing JSON from file ${file}: ${error}`)
 			return null
 		}
-
+		
+		//Removing duplicate board objects
 		json?.boards?.forEach((boardData : Board) => {
 			try {
 				const board = toBoard(boardData)
@@ -80,8 +80,7 @@ const readJsonFiles = async(directory: string): Promise<Board[]> => {
 		
 	} catch (error){
 		console.error(`Failed to process files: ${error}`)
-	}
-	console.log('allBoards', allBoards)
+	}	
 	return allBoards
 }
 

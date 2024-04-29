@@ -80,8 +80,8 @@ const isNumber = (number: unknown): number is number => {
 }
 
 const isSystemFile = (fileName: string): boolean => {
-    const systemFiles = ['Thumbs.db', 'desktop.ini'];
-    return systemFiles.includes(fileName);
+	const systemFiles = ['Thumbs.db', 'desktop.ini'];
+	return systemFiles.includes(fileName);
 }
 
 export { toBoard, toResult, isSystemFile }

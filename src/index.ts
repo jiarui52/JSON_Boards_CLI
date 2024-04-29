@@ -4,13 +4,13 @@ import { outputToConsole, outputToJsonFile } from './OutputHandler';
 
 const main = async (directory: string, outputPath?: string): Promise<void> => {
   
-    const boardsArray = await readJsonFiles(directory)
-    const processedData = processBoardData(boardsArray)
-    if (outputPath) {
-        await outputToJsonFile(outputPath, processedData)
-    } else {
-        outputToConsole(processedData)
-    }
+	const boardsArray = await readJsonFiles(directory)
+	const processedData = processBoardData(boardsArray)
+	if (outputPath) {
+		await outputToJsonFile(outputPath, processedData)
+	} else {
+		outputToConsole(processedData)
+	}
 }
 
 const [directory, outputPath] = process.argv.slice(2)
