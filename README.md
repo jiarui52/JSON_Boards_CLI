@@ -29,6 +29,7 @@ Examples:
 `npm start example-boards/case1`
 
 2. Combining JSON files and writing the output to a specific file:
+   
 `npm start example-boards/case1 output.json`
 
 ## Assumptions
