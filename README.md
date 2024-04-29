@@ -16,7 +16,7 @@ Running the Application
 
 To run the application, use the following command:
 
-npm start <directory-path> [output-path]
+`npm start <directory-path> [output-path]`
 
 Where:
 - `<directory-path>` is the path to the directory containing the JSON files to process.
