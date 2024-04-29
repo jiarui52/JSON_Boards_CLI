@@ -18,15 +18,17 @@ To run the application, use the following command:
 
 npm start <directory-path> [output-path]
 
-<directory-path>: Mandatory. The path to the directory containing the JSON files to process.
-[output-path]: Optional. The path where the output JSON file should be saved. If not provided, the output will be printed to the console.
+Where:
+- `<directory-path>` is the path to the directory containing the JSON files to process.
+- `[output-path]` is optional and represents the path where the output JSON file should be saved. If not provided, the output will be printed to the console.
+
 
 Examples:
 1. Combining JSON files and printing the output to the console:
 
 npm start example-boards/case1
 
-3. Combining JSON files and writing the output to a specific file:
+2. Combining JSON files and writing the output to a specific file:
 npm start example-boards/case1 output.json
 
 ## Assumptions
